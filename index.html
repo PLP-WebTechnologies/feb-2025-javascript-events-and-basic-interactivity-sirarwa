@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Form Demo</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <div class="container">
+          <h1>Interactive Java Script</h1>
+        
+          <form id="interactive-form">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" class="input" required>
+              <p id="username-error" class="error-text"></p>
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="input" required>
+              <p id="email-error" class="error-text"></p>
+            </div>
+  
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" class="input" required>
+              <p id="age-error" class="error-text"></p>
+            </div>
+  
+            <button type="submit" class="submit-button">Submit Form</button>
+            <p id="submission-status" class="status-message"></p>
+          </form>
+  
+          <div class="interactive-section">
+            <h2>Interactive Counter</h2>
+            <button id="counter-button" class="interactive-button">
+              Count: <span id="counter-value">0</span>
+            </button>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </body>
+      </html>
